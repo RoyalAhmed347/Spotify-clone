@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - The best mucis plateform</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/aa250bb446.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="contener">
+            <div class="header">
+                <a href="/" class="brandName">
+                    <img src="./img/logo.png" alt="">
+                    Spotify
+                </a>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="data_contener">
+        <div class="contener">
+            <div class="data_mian_box">
+                <h2 class="heading">Best of NCS - No Copyright Sounds
+                </h2>
+                <div class="audioItems">
+                    <!-- <div class="audioItem">
+                        <img src="img/covers/4.jpg" alt="">
+                        <h4>OLD SKOOL (Full Video) Prem Dhillon ft Sidhu Mo...</h4>
+                        <div class="cruntTime">05.12 <i class="fa-solid fa-play"></i></div>
+                    </div> -->
+                    <audio src="songs/1.mp3"></audio>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="control">
+        <div class="contener">
+            <div class="control-contener">
+                
+
+                <input type="range" name="" value="0" minvalue="0"  minvalue="100" id="auido_line">
+                <div class="timigLine">
+                    <h5 id="cruntTime">00.00</h5>
+                    <h5 id="totalTime">00.00</h5>
+                </div>
+                <div class="volume" >
+                   <div></div>
+                   <div class="volume_data"> <i class="fa-solid  volumeIcon fa-volume-high"></i>
+                    <input type="range" minvalue="0" minvalue="100" value="20" name="" id="volume_line"></div>
+                </div>
+                <div class="palyer_icon">
+                    <i class="fa-solid fa-2x fa-backward-step backwardAudio"></i>
+                    <i class="fa-solid fa-3x playBtn fa-circle-play"></i>
+                    <i class="fa-solid fa-2x fa-forward-step forwardAudio"></i>
+                    <div class="audio_detials">
+                        <h4 id="audio_detials_name"></h4>
+                        
+                    </div>
+                    <div class="layer">
+                        <img src="img/playing.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/audioItemData.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
